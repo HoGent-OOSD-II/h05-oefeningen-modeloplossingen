@@ -3,49 +3,49 @@ package domein;
 import util.Kleur;
 
 public class DomeinController {
-	private Simon simon;
+    private Simon simon;
 
-	public void startNieuwSpel(Kleur[] spelkleuren) {
-		simon = new Simon(spelkleuren);
-	}
+    public void startNieuwSpel(Kleur[] spelkleuren) {
+        simon = new Simon(spelkleuren);
+    }
 
-	public void voegNieuweKleurAanKleurenreeksToe() {
-		simon.voegNieuweKleurAanKleurenreeksToe();
-	}
+    public void voegNieuweKleurAanKleurenreeksToe() {
+        simon.voegNieuweKleurAanKleurenreeksToe();
+    }
 
-	public Kleur geefNieuweKleurUitKleurenreeks() {
-		return simon.geefNieuweKleurUitKleurenreeks();
-	}
+    public Kleur geefNieuweKleurUitKleurenreeks() {
+        return simon.geefNieuweKleurUitKleurenreeks();
+    }
 
-	public void kiesKleur(Kleur kleur) {
-		simon.verwerkGekozenKleur(kleur);
-	}
+    public void kiesKleur(Kleur kleur) {
+        simon.verwerkGekozenKleur(kleur);
+    }
 
-	public boolean isGoedGeraden() {
-		return simon.isKleurGoedGeraden();
-	}
+    public boolean isGoedGeraden() {
+        return simon.isKleurGoedGeraden();
+    }
 
-	public boolean isReeksVolledigGeraden() {
-		return simon.isReeksVolledigGeraden();
-	}
+    public boolean isReeksVolledigGeraden() {
+        return simon.isReeksVolledigGeraden();
+    }
 
-	public Kleur geefGemisteKleur() {
-		return simon.geefGemisteKleur();
-	}
+    public Kleur geefGemisteKleur() {
+        return simon.geefGemisteKleur();
+    }
 
-	public int geefAantalgeradenKleuren() {
-		return simon.getAantalGoedGeraden();
-	}
+    public int geefAantalGeradenKleuren() {
+        return simon.getAantalGoedGeraden();
+    }
 
-	public String geefKleurenreeks() {
-		String resultaat = "";
-		for (Kleur kleur : simon.getKleurenReeks()) {
-			resultaat += String.format("%s ", kleur);
-		}
-		return resultaat;
-	}
+    public String geefKleurenreeks() {
+        String resultaat = "";
+        for (Kleur kleur : simon.getKleurenReeks()) {
+            resultaat += String.format("%s ", kleur);
+        }
+        return resultaat;
+    }
 
-	public Kleur[] geefSpelKleuren() {
-		return simon.getSpelKleuren();
-	}
+    public Kleur[] geefSpelKleuren() {
+        return simon.getSpelKleuren();
+    }
 }
