@@ -134,7 +134,7 @@ public class OverzichtsScherm extends BorderPane {
 
     private Parent maakToevoegController() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/ToevoegView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/ToevoegScherm.fxml"));
             loader.setControllerFactory(type -> {
                 try {
                     if (type == ToevoegController.class) {
